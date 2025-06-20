@@ -9,3 +9,13 @@ cmake ../open62541
 make
 
 ```
+
+to build examples
+
+```
+sudo make install
+cp ../open62541/examples/tutorial_server_firststeps.c .
+gcc -std=c99 -o server tutorial_server_firststeps.c -lopen62541
+```
+
+Now to figure out what all of this means.
