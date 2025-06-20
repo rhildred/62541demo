@@ -18,4 +18,4 @@ cp ../open62541/examples/tutorial_server_firststeps.c .
 gcc -std=c99 -o server tutorial_server_firststeps.c -lopen62541
 ```
 
-Now to figure out what all of this means.
+Now to figure out what all of this means. I also want to do otel with this. I think that I need https://github.com/dorsal-lab/opentelemetry-c.
