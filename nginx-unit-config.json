@@ -1,0 +1,15 @@
+{
+    "listeners": {
+        "*:80": {
+            "pass": "routes"
+        }
+    },
+
+    "routes": [
+        {
+            "action": {
+                "share": "/workspaces/62541demo/dist/angular-custom-element/browser$uri"
+            }
+        }
+    ]
+}

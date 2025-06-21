@@ -22,7 +22,12 @@ There are lots more examples in `../open62541/examples`.
 
 Now to figure out what all of this means. I also want to do otel with this. I think that I need https://github.com/dorsal-lab/opentelemetry-c.
 
-I also have nginx unit installed. To run unit in the foreground `sudo unitd --no-daemon`.
+I also have nginx unit installed. To run unit in the foreground:
+
+```
+sudo unitd --no-daemon --control "0.0.0.0:8080"
+curl -X PUT --data-binary @nginx-unit-config.json http://localhost:8080/config
+```
 
 # AngularCustomElement
 
